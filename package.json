@@ -1,0 +1,19 @@
+{
+  "name": "bittrex-api-client",
+  "version": "0.0.1",
+  "description": "Bittrex.com REST client with socket support for live orderbook done right",
+  "main": "index.js",
+  "repository": "git@github.com:laurynas-karvelis/bittrex-api-client.git",
+  "author": "Laurynas Karvelis <laurynas.karvelis@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "bignumber.js": "4.1.0",
+    "bittrex-market": "2.2.0",
+    "limiter": "1.1.2",
+    "lodash": "4.17.4",
+    "promise-retry": "1.1.1",
+    "request-promise": "4.2.2",
+    "uuid": "3.1.0"
+  }
+}
