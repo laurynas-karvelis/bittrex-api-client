@@ -22,7 +22,7 @@ Following features:
 
 Example usage of this module:
 ```javascript 1.6
-const {configure, PublicApi, PrivateApi} = require('bittrex-api-client');
+const {configure, PublicApi, PrivateApi} = require('bittrex-promised-api');
 
 // override default module configuration before initializing API instances
 configure({
@@ -52,10 +52,22 @@ privateApi.getBalance('BTC')
 // get hourly candles for BTC-NEO market and trim returned array to the last 50 candles
 // IMPORTANT: it is highly advisable to create a separate API key pair for PrivateApi when fetching candle list
 // Apparently mixing v1.1 and v2.0 API calls using same API keys Bittrex returns INVALID_SIGNATURE errors
-candlePrivateApi.getCandles('BTC-NEO', privateApi.CANDLE_TYPES.HOURLY, 50)
+candlePrivateApi.getCandles('BTC-NEO', candlePrivateApi.CANDLE_TYPES.HOURLY, 50)
     .then(console.log)
     .catch(console.error);
 ```
+
+Example usage of socket client:
+```javascript 1.6
+const {SocketApi} = require('bittrex-promised-api');
+
+const socketApi = new SocketApi;
+socketApi.market('BTC-ETH', (err, ethereum) => {
+    ethereum.on('fills', console.log);
+});
+```
+
+[More documentation on socket API usage is here](https://github.com/gliwka/bittrex-market)
 
 ## Motivation
 
