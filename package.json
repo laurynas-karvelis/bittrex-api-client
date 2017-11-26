@@ -1,5 +1,5 @@
 {
-  "name": "bittrex-api-client",
+  "name": "bittrex-promised-api",
   "version": "0.0.1",
   "description": "Bittrex.com REST client with socket support for live orderbook done right",
   "main": "index.js",

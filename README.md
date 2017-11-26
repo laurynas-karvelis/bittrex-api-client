@@ -1,4 +1,4 @@
-# bittrex-api-client
+# bittrex-promised-api
 Bittrex.com REST client with socket support for live orderbook done right
 
 ## Synopsis
