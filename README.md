@@ -65,7 +65,12 @@ After failing to find a complete and elegant module that includes sockets, promi
 
 To install this module using yarn package manager invoke the following line in your project's working directory.
 ```
-$ yarn add bittrex-api-client
+$ yarn add bittrex-promised-api
+```
+
+Or using npm:
+```
+$ npm install bittrex-promised-api
 ```
 
 ## Tests
