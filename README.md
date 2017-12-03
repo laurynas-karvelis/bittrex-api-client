@@ -14,8 +14,8 @@ Following features:
 * Supports request retries out-of-the-box
 * Uses request queue limiter
 * REST API responses are being run through response adapters
-..* Converts most numbers into BigNumber instances for precision maths
-..* Converts dates and timestamps to Date instances
+* Converts most numbers into BigNumber instances for precision maths
+* Converts dates and timestamps to Date instances
 * Configurable
 
 ## Code Example
