@@ -8,6 +8,8 @@ Bittrex.com API. This module delivers REST interface along with socket implement
 order fills and orderbooks for individual markets realtime. Socket implementation is just and exposed 3rd party
 ``bittrex-market`` module.
 
+This module works well with my another [bittrex-trade](https://github.com/laurynas-karvelis/bittrex-trade) module that enables users to fulfill limitBuy/limitSell orders till entire quantity is purchased/sold.
+
 Following features:
 * REST Transport is built on top of ``request-promise``
 * Bluebird promise based
