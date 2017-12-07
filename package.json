@@ -1,6 +1,6 @@
 {
   "name": "bittrex-promised-api",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Bittrex.com REST client with socket support for live orderbook done right",
   "main": "index.js",
   "repository": "git@github.com:laurynas-karvelis/bittrex-api-client.git",
